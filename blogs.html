@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ * {
+  box-sizing: border-box; /* Ensures padding and borders are included within the width and height */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scroll */
+  width: 100%;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+}
+
+.post-container-blogs {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fffafa;
+  padding-bottom: 20px; /* Add some padding to prevent overlap with footer */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-blogs {
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.post-blogs:hover {
+  transform: scale(1.1);
+}
+
+.post-blogs.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.post-blogs.active ~ .post-blogs {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.post-blogs .date-blogs {
+  font-family: Roboto, sans-serif;
+  color: #008080;
+}
+
+.post-blogs .post-content-blogs {
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
+}
+
+.post-blogs .post-content-blogs p {
+  margin-bottom: 20px;
+}
+
+.blur {
+  filter: blur(10px);
+}
+</style>
+</head>
+<html>
+    <head>
+      <meta />
+      <title>Blog</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body> 
+        <div class="post-container-blogs">
+          <div class="post-blogs">
+            <p class="date-blogs">1936</p>
+            <h1>Jesse Owens’ Triumph in 1936</h1>
+            <div class="post-content-blogs">
+              <p>Jesse Owens’ performance at the 1936 Berlin Olympics is one of the most iconic moments in Olympic history. Owens, an African American athlete, won four gold medals in the face of Nazi propaganda promoting Aryan racial superiority. His victories were a powerful statement against racism and discrimination, showcasing the unifying power of sports. </p>
+            </div>
+          </div>
+          <div class="post-blogs">
+            <p class="date-blogs">1980</p>
+            <h1>The Miracle on Ice</h1>
+            <div class="post-content-blogs">
+              <p>The "Miracle on Ice" refers to the unexpected victory of the U.S. men's ice hockey team over the heavily favored Soviet Union team during the 1980 Winter Olympics in Lake Placid. This event is celebrated as a symbol of American resilience and determination during the Cold War era, and it remains one of the greatest upsets in sports history.</p>
+            </div>
+          </div>
+          <div class="post-blogs">
+            <p class="date-blogs">2008</p>
+            <h1>Usain Bolt’s Unmatched Speed</h1>
+            <div class="post-content-blogs">
+              <p>Usain Bolt's performance at the 2008 Beijing Olympics redefined the limits of human speed. Bolt won three gold medals and set world records in the 100 meters, 200 meters, and 4x100 meters relay. His charismatic personality and extraordinary talent made him a global icon and inspired a new generation of athletes.</p>
+            </div>
+          </div>
+          <div class="post-blogs">
+            <p class="date-blogs">2016</p>
+            <h1>Sim one Biles’ Gymnastics Mastery</h1>
+            <div class="post-content-blogs">
+              <p>Simone Biles dominated the gymnastics events at the  2016 Rio Olympics, winning four gold medals and one bronze. Her performances were marked by unprecedented difficulty and flawless execution, establishing her as one of the greatest gymnasts of all time. Biles' achievements have had a lasting impact on the sport, inspiring young gymnasts worldwide.</p>
+            </div>
+          </div>
+          </div>        
+        </div>        
+      </body>
+  </html>
